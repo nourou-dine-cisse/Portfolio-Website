@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mouhamed N. D. Cissé — AI/ML Engineer</title>
+  <title>Mouhamed N. D. Cisse: AI/ML Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -211,6 +211,27 @@
       flex-shrink: 0
     }
 
+    .language-btn {
+      margin-left: 10px;
+      min-width: 42px;
+      height: 36px;
+      padding: 0 9px;
+      background: var(--card);
+      border: 1.5px solid var(--bdr2);
+      border-radius: 9px;
+      color: var(--txt);
+      font: 600 .75rem var(--fm);
+      cursor: pointer;
+      transition: all .25s;
+      flex-shrink: 0
+    }
+
+    .language-btn:hover {
+      border-color: var(--pri);
+      background: var(--pri-ll);
+      color: var(--pri)
+    }
+
     .theme-btn:hover {
       border-color: var(--pri);
       background: var(--pri-ll)
@@ -335,7 +356,7 @@
     }
 
     .hero-name .ln {
-      overflow: hidden;
+      overflow: visible;
       display: block
     }
 
@@ -1359,7 +1380,7 @@
 
   <!-- ── NAV ──────────────────────────────────────────────────────────────── -->
   <nav id="nav" class="up">
-    <a href="#" class="nav-logo">MND<b>.</b>CISSÉ</a>
+    <a href="#" class="nav-logo">MND<b>.</b>CISSE</a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -1368,6 +1389,7 @@
       <a href="#education">Education</a>
       <a href="#contact" class="nav-cta">Contact</a>
     </div>
+    <button class="language-btn" id="language-btn" type="button" aria-label="Switch language to French">FR</button>
     <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
       <!-- Moon (shown in light mode) -->
       <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1398,7 +1420,7 @@
     <div id="skill-cloud"></div>
     <div class="hero-inner">
       <div class="hero-text">
-        <div class="htag" id="h-tag"><span class="htag-dot"></span>Open to AI/ML Internship · May 2026</div>
+        <div class="htag" id="h-tag"><span class="htag-dot"></span>Seeking a 6-month end-of-studies internship · March 2027</div>
         <h1 class="hero-name" id="h-name">
           <span class="ln"><span class="word">MOUHAMED</span></span>
           <span class="ln"><span class="word hi">NOUROU DINE</span></span>
@@ -1406,7 +1428,7 @@
         </h1>
         <p class="hero-role" id="h-role"></p>
         <p class="hero-desc" id="h-desc">Building end-to-end ML systems across computer vision, graph neural networks,
-          and reinforcement learning. ENS IIE · McMaster University · Entrepreneurship winner.</p>
+          and reinforcement learning. ENSIIE–M2IA double degree · Entrepreneurship winner.</p>
         <div class="hero-btns" id="h-btns">
           <a href="#projects" class="btn-p">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -1440,10 +1462,8 @@
       <h2 class="stitle">Crafting Intelligence,<br><span>One Model at a Time</span></h2>
       <div class="about-g">
         <div class="at">
-          <p>I'm <strong>Mouhamed Nourou Dine Cissé</strong>, an Applied Mathematics student at <strong>ENS IIE (Paris
-              Saclay)</strong> specializing in AI, currently on exchange at <strong>McMaster University</strong>,
-            Canada.</p>
-          <p>I build production-ready ML systems — from raw data pipelines to deployed models — across computer vision,
+          <p>I'm <strong>Mouhamed Nourou Dine Cisse</strong>, an Applied Mathematics engineering student pursuing the <strong>ENSIIE–M2IA double degree at Université Paris-Saclay</strong>.</p>
+          <p>I build production-ready ML systems: from raw data pipelines to deployed models, across computer vision,
             graph neural networks, NLP, and reinforcement learning.</p>
           <p>I co-founded <strong>ETLia</strong>, an AI platform automating ETL via natural language, which won
             <strong>France's largest Engineering School Entrepreneurship Challenge 2025</strong>.
@@ -1533,12 +1553,27 @@
           <div class="tli-dot"></div>
           <div class="tlc">
             <div class="tlh">
+              <div class="tlt">AI & Data Engineering Intern</div>
+              <div class="tld">May 11 – Jul 17, 2026</div>
+            </div>
+            <div class="tls">Prodigious France · Publicis Groupe · Paris</div>
+            <ul class="tlul">
+              <li><strong>AI Platform Development:</strong> Designed and developed Spielberg, an operational data centralization platform for Prodigious France.</li>
+              <li><strong>Multi-Agent AI & RAG:</strong> Built LangGraph supervisor-worker agents and a retrieval-augmented generation pipeline for internal business data.</li>
+              <li><strong>Backend Engineering:</strong> Delivered production-oriented FastAPI services and PostgreSQL integrations, documented in a 54-page engineering thesis.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tli">
+          <div class="tli-dot"></div>
+          <div class="tlc">
+            <div class="tlh">
               <div class="tlt">Machine Learning Intern</div>
               <div class="tld">May – Aug 2025</div>
             </div>
             <div class="tls">Bangath Systems & Gainde 2k · Paris / Dakar</div>
             <ul class="tlul">
-              <li><strong>ML Modeling:</strong> Predictive suite for Port of Dakar (110,260 records) — Random Forest
+              <li><strong>ML Modeling:</strong> Predictive suite for Port of Dakar (110,260 records): Random Forest
                 (F1=0.96) for irregularity detection, SARIMA (MAE=0.67) for dossier traffic forecasting.</li>
               <li><strong>Data Engineering:</strong> Secure Oracle Cloud pipeline with SQL/PLSQL across 136 variables,
                 managing a 12% missing value rate.</li>
@@ -1571,7 +1606,7 @@
           <div class="ai"><svg width="20" height="20" viewBox="0 0 24 24" fill="#f59e0b">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg></div>
-          <div class="att">Winner — France's Largest Engineering School Entrepreneurship Challenge 2025</div>
+          <div class="att">Winner: France's Largest Engineering School Entrepreneurship Challenge 2025</div>
           <div class="adc">Co-founded ETLia, an AI platform automating ETL pipelines via natural language queries.</div>
         </div>
         <div class="ac">
@@ -1580,7 +1615,7 @@
               <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
               <polyline points="22 4 12 14.01 9 11.01" />
             </svg></div>
-          <div class="att">1st in Class — Data Analysis, ENS IIE</div>
+          <div class="att">1st in Class: Data Analysis, ENS IIE</div>
           <div class="adc">Ranked first in Data Analysis among all engineering students at ENS IIE (Paris Saclay).</div>
         </div>
       </div>
@@ -1594,29 +1629,28 @@
       <h2 class="stitle">Education & <span>Training</span></h2>
       <div class="eg">
         <div class="ec">
+          <div class="eyr">2026–2027</div>
+          <div>
+            <div class="esc">ENSIIE · Université Paris-Saclay</div>
+            <div class="edg">Double Degree ENSIIE–M2IA · Université Paris-Saclay</div>
+            <div class="edd">M2IA courses: Data Readiness and Evaluation in AI Systems, NLP Today, Deep Learning for NLP, Information Retrieval 2: Recent Advances, Reinforcement Learning, Probabilistic Generative Models, Advanced Optimization and Automated ML, and Scientific Machine Learning, with a choice between Signal Processing M2 and From Symbolic to Neurosymbolic AI.</div>
+          </div>
+        </div>
+        <div class="ec">
           <div class="eyr">Winter 2026</div>
           <div>
             <div class="esc">McMaster University · Canada</div>
             <div class="edg">Exchange Semester</div>
             <div class="edd">Neural Networks & ML, Applied AI (NLP, Computer Vision, LLMs), Generalized Linear Models,
-              Time Series (ARIMA/Box-Jenkins), Financial Markets & Derivatives — stochastic calculus and Black-Scholes.
+              Time Series (ARIMA/Box-Jenkins), Financial Markets & Derivatives: stochastic calculus and Black-Scholes.
             </div>
-          </div>
-        </div>
-        <div class="ec">
-          <div class="eyr">2024–2027</div>
-          <div>
-            <div class="esc">ENS IIE · Paris Saclay University</div>
-            <div class="edg">Master in Applied Mathematics & Computer Science</div>
-            <div class="edd">Probability, Statistics, Stochastic Processes, Data Analysis, Machine Learning, Deep
-              Learning, Graph Theory and Markov Chains.</div>
           </div>
         </div>
         <div class="ec">
           <div class="eyr">2022–2024</div>
           <div>
             <div class="esc">Lycée Albert Schweitzer · Mulhouse</div>
-            <div class="edg">CPGE MP* — Classe Préparatoire aux Grandes Écoles</div>
+            <div class="edg">CPGE MP*: Classe Préparatoire aux Grandes Écoles</div>
             <div class="edd">Intensive two-year program in advanced mathematics, physics, and computer science for
               France's top engineering schools.</div>
           </div>
@@ -1632,7 +1666,7 @@
       <h2 class="stitle">Let's <span>Connect</span></h2>
       <div class="cg">
         <div class="ci">
-          <p>I'm actively seeking an <strong>AI / Machine Learning internship from May 2026</strong>. If you have an
+          <p>I'm actively seeking a <strong>6-month end-of-studies AI / Machine Learning internship from March 2027</strong>. If you have an
             opportunity or just want to talk AI, I'd love to hear from you.</p>
           <div class="clinks">
             <a href="mailto:mouhamed.nouroudine.cisse@gmail.com" class="clink">
@@ -1655,7 +1689,7 @@
                 </svg></div>
               <div>
                 <div class="clb">LinkedIn</div>
-                <div class="cv">Mouhamed Nourou Dine Cissé</div>
+                <div class="cv">Mouhamed Nourou Dine Cisse</div>
               </div>
             </a>
             <a href="https://github.com/nourou-dine-cisse" target="_blank" class="clink">
@@ -1677,7 +1711,7 @@
                 </svg></div>
               <div>
                 <div class="clb">Phone</div>
-                <div class="cv">+33 7 65 60 09 97</div>
+                <div class="cv">+33 6 08 50 85 18</div>
               </div>
             </div>
           </div>
@@ -1687,7 +1721,7 @@
             <div class="id-m">MND<b>.</b></div>
             <div class="id-city">Paris, France · Open to relocation</div>
             <div class="id-chips">
-              <span class="lchip">French: Native</span><span class="lchip">English: C1</span><span class="lchip">Arabic:
+              <span class="lchip">French: Native</span><span class="lchip">English: C2</span><span class="lchip">Arabic:
                 B2</span><span class="lchip">German: B1</span>
             </div>
           </div>
@@ -1696,7 +1730,7 @@
     </div>
   </section>
 
-  <footer>Built by <b>Mouhamed Nourou Dine Cissé</b> · 2026 · Seeking AI/ML internship from May 2026</footer>
+  <footer>Built by <b>Mouhamed Nourou Dine Cisse</b> · 2026 · Seeking a 6-month end-of-studies internship from March 2027</footer>
 
   <script>
     // ═══════════════════════════════════════════════════════════════════════
@@ -1716,7 +1750,7 @@
           "TinyStories"
         ],
         "desc": "From-scratch PyTorch implementation of a decoder-only LLM (LLaMA/Mistral). Features causal multi-head attention, Rotary Position Embeddings (RoPE), pre-norm RMSNorm, SwiGLU FFN, and O(N) autoregressive KV-caching with perplexity evaluation.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/16_Transformer_Decoder_Text_Generator",
+        "github": "https://github.com/nourou-dine-cisse/Transformer-Decoder-Text-Generator",
         "report": null,
         "presentation": null,
         "demo": null,
@@ -1735,9 +1769,9 @@
           "Docker"
         ],
         "desc": "Enterprise operational data platform developed at Prodigious (Publicis Groupe). Features governed LangGraph supervisor-worker agents, semantic chunking RAG pipeline, and production FastAPI services. 54-page thesis defended.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/01_Spielberg_AI_Data_Platform",
-        "report": "../ENSIIE/All projects/01_Spielberg_AI_Data_Platform/reports/Rapport_de_Stage_Spielberg_2026.pdf",
-        "presentation": "../ENSIIE/All projects/01_Spielberg_AI_Data_Platform/presentations/Soutenance_Spielberg.pdf",
+        "github": "https://github.com/nourou-dine-cisse/Spielberg-AI-Data-Platform",
+        "report": "https://raw.githubusercontent.com/nourou-dine-cisse/Spielberg-AI-Data-Platform/main/reports/Rapport_de_Stage_Spielberg_2026.pdf",
+        "presentation": "https://raw.githubusercontent.com/nourou-dine-cisse/Spielberg-AI-Data-Platform/main/presentations/Soutenance_Spielberg.pdf",
         "demo": null,
         "featured": true
       },
@@ -1754,8 +1788,8 @@
         ],
         "desc": "McMaster University MATH 4FM3 research project: trained Deep Q-Networks (Nash-DQN) in an N-agent stochastic differential game with temporary and permanent price impact, discovering competitive Nash equilibrium policies. 34-page thesis.",
         "github": "https://github.com/nourou-dine-cisse/Nash-Deep-Q-Learning-Multi-Agent-Optimal-Trading",
-        "report": "../ENSIIE/All projects/09_McMaster_Nash_DQN_MultiAgent_Trading/reports/Rapport_Nash_DQN_Optimal_Trading.pdf",
-        "presentation": null,
+        "report": "https://raw.githubusercontent.com/nourou-dine-cisse/Nash-Deep-Q-Learning-Multi-Agent-Optimal-Trading/main/reports/Rapport_Nash_DQN_Optimal_Trading.pdf",
+        "presentation": "https://raw.githubusercontent.com/nourou-dine-cisse/Nash-Deep-Q-Learning-Multi-Agent-Optimal-Trading/main/presentation/NashDQN_Presentation.pptx",
         "demo": null,
         "featured": true
       },
@@ -1772,8 +1806,8 @@
           "Multimodal"
         ],
         "desc": "McMaster University multimodal project: fused textual questions (BERT) and image feature maps (ResNet CNN) via cross-attention layers. Includes an interactive Streamlit inference demo for live image queries.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/12_McMaster_Visual_Question_Answering_VQA",
-        "report": "../ENSIIE/All projects/12_McMaster_Visual_Question_Answering_VQA/reports/VQA_Project_Roadmap.pdf",
+        "github": "https://github.com/nourou-dine-cisse/McMaster-Visual-Question-Answering-VQA",
+        "report": "https://raw.githubusercontent.com/nourou-dine-cisse/McMaster-Visual-Question-Answering-VQA/main/reports/VQA_Project_Roadmap.pdf",
         "presentation": null,
         "demo": null,
         "featured": true
@@ -1790,8 +1824,8 @@
           "x86 Assembly"
         ],
         "desc": "Sorbonne Université Cybersecurity Data Challenge: parsed disassembled Windows binaries into Control Flow Graphs (CFGs). Trained PyTorch Geometric Graph Neural Networks & opcode frequency classifiers predicting 459 behavioral tags.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/15_Sorbonne_Cyber_Malware_GNN_Challenge",
-        "report": "../ENSIIE/All projects/15_Sorbonne_Cyber_Malware_GNN_Challenge/reports/Briefing_Data_Challenge_Sorbonne.pdf",
+        "github": null,
+        "report": null,
         "presentation": null,
         "demo": null,
         "featured": true
@@ -1810,7 +1844,7 @@
         ],
         "desc": "ENSIIE quantitative computing project: solved the Black-Scholes PDE for European options using Explicit, Implicit (Thomas solver), and Crank-Nicolson finite difference schemes. Real-time SDL 2.0 dynamic payoff and error visualization.",
         "github": "https://github.com/nourou-dine-cisse/Black-Scholes-Solver",
-        "report": "../ENSIIE/All projects/06_Black_Scholes_PDE_Solver/reports/Rapport_Black_Scholes.pdf",
+        "report": "https://raw.githubusercontent.com/nourou-dine-cisse/Black-Scholes-Solver/main/reports/Rapport_Black_Scholes.pdf",
         "presentation": null,
         "demo": null,
         "featured": true
@@ -1827,10 +1861,10 @@
           "TailwindCSS",
           "PyODBC"
         ],
-        "desc": "1st Prize Winner — ENSIIE Entrepreneurship Challenge: fullstack AI ETL platform featuring dynamic SQL Server schema inspection, automated data cleaning, and an interactive Streamlit analytics backend with a React UI.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/02_ETLia_AI_Data_Wizard",
+        "desc": "1st Prize Winner: ENSIIE Entrepreneurship Challenge: fullstack AI ETL platform featuring dynamic SQL Server schema inspection, automated data cleaning, and an interactive Streamlit analytics backend with a React UI.",
+        "github": "https://github.com/nourou-dine-cisse/ETLia-AI-Data-Wizard",
         "report": null,
-        "presentation": "../ENSIIE/All projects/02_ETLia_AI_Data_Wizard/Groupe-35.pdf",
+        "presentation": "https://raw.githubusercontent.com/nourou-dine-cisse/ETLia-AI-Data-Wizard/main/Groupe-35.pdf",
         "demo": null,
         "featured": true
       },
@@ -1847,7 +1881,7 @@
           "Datamart"
         ],
         "desc": "Tourism agency operational data engineering: automated Excel workbook validation, multi-source ingestion, business metrics aggregation, and containerized Docker ETL pipeline populating a star-schema datamart with one-click Windows launcher.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/03_SunSejour_ETL_Datamart",
+        "github": "https://github.com/nourou-dine-cisse/SunSejour-ETL-Datamart",
         "report": null,
         "presentation": null,
         "demo": null,
@@ -1866,9 +1900,9 @@
           "Scikit-Learn"
         ],
         "desc": "Gainde 2000 / Infinity Analytics internship: developed SARIMA, SARIMAX and Vector AutoRegression (VAR) macroeconomic models alongside an enterprise calibrated behavioral credit scoring pipeline with Brier score validation.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/04_Infinity_Analytics_Time_Series_ML",
-        "report": "../ENSIIE/All projects/04_Infinity_Analytics_Time_Series_ML/reports/Rapport_de_Stage.pdf",
-        "presentation": "../ENSIIE/All projects/04_Infinity_Analytics_Time_Series_ML/presentations/Presentation_de_Stage.pdf",
+        "github": "https://github.com/nourou-dine-cisse/Infinity-Analytics-Time-Series-ML",
+        "report": "https://raw.githubusercontent.com/nourou-dine-cisse/Infinity-Analytics-Time-Series-ML/main/reports/Rapport_de_Stage.pdf",
+        "presentation": "https://raw.githubusercontent.com/nourou-dine-cisse/Infinity-Analytics-Time-Series-ML/main/presentations/Presentation_de_Stage.pdf",
         "demo": null,
         "featured": false
       },
@@ -1886,7 +1920,7 @@
         "desc": "ENSIIE biostatistics study on the Nature 2012 METABRIC breast cancer cohort (2,000 patients): Kaplan-Meier survival curves, Log-Rank tests, Cox PH hazard ratio estimation, and multivariate logistic relapse prediction.",
         "github": "https://github.com/nourou-dine-cisse/AI-Breast-Cancer-Outcome-Detection",
         "report": null,
-        "presentation": "../ENSIIE/All projects/07_Breast_Cancer_Biostatistics_MERR/reports/Rapport_Cancer_Survie_MERR.pdf",
+        "presentation": "https://raw.githubusercontent.com/nourou-dine-cisse/AI-Breast-Cancer-Outcome-Detection/main/reports/Rapport_Cancer_Survie_MERR.pdf",
         "demo": null,
         "featured": false
       },
@@ -1903,8 +1937,8 @@
           "Named Entity Recognition"
         ],
         "desc": "ENSIIE NLP course: evaluated word embeddings geometry and built a hybrid character-CNN + BiLSTM sequence tagger for CoNLL Named Entity Recognition alongside 1D-CNN sentence classification and BERT fine-tuning.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/05_NLP_Semantic_Representations_NER",
-        "report": "../ENSIIE/All projects/05_NLP_Semantic_Representations_NER/reports/Report_CISSE_DIOP.pdf",
+        "github": "https://github.com/nourou-dine-cisse/NLP-Semantic-Representations-NER",
+        "report": "https://raw.githubusercontent.com/nourou-dine-cisse/NLP-Semantic-Representations-NER/main/reports/Report_CISSE_DIOP.pdf",
         "presentation": null,
         "demo": null,
         "featured": false
@@ -1921,8 +1955,8 @@
           "NLP"
         ],
         "desc": "McMaster University STATS 4A03 project: analyzed directional financial sentiment in market news headlines using a Bidirectional LSTM network with dropout regularization and confusion matrix diagnostics.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/10_McMaster_Financial_News_Sentiment_BiLSTM",
-        "report": "../ENSIIE/All projects/10_McMaster_Financial_News_Sentiment_BiLSTM/reports/Financial_News_Sentiment_Report.pdf",
+        "github": "https://github.com/nourou-dine-cisse/McMaster-Financial-News-Sentiment-BiLSTM",
+        "report": "https://raw.githubusercontent.com/nourou-dine-cisse/McMaster-Financial-News-Sentiment-BiLSTM/main/reports/Financial_News_Sentiment_Report.pdf",
         "presentation": null,
         "demo": null,
         "featured": false
@@ -1940,8 +1974,8 @@
           "Time Series"
         ],
         "desc": "McMaster University STATS 4A03 project: applied the Box-Jenkins methodology on Statistics Canada retail sales. Power Box-Cox transformations, seasonal differencing, AICc minimization, and Ljung-Box residual diagnostics.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/11_McMaster_Canadian_Retail_Time_Series",
-        "report": "../ENSIIE/All projects/11_McMaster_Canadian_Retail_Time_Series/reports/Canadian_Retail_Time_Series_Report.pdf",
+        "github": "https://github.com/nourou-dine-cisse/McMaster-Canadian-Retail-Time-Series",
+        "report": "https://raw.githubusercontent.com/nourou-dine-cisse/McMaster-Canadian-Retail-Time-Series/main/reports/Canadian_Retail_Time_Series_Report.pdf",
         "presentation": null,
         "demo": null,
         "featured": false
@@ -1960,8 +1994,8 @@
         ],
         "desc": "ENSIIE ANDO course: multidimensional exploration of the NYC Airbnb 2019 dataset (49k rows). Principal Component Analysis, Canonical Correlation Analysis between property and review blocks, and host segmentation.",
         "github": "https://github.com/nourou-dine-cisse/Projet-ANDO",
-        "report": "../ENSIIE/All projects/08_Airbnb_NYC_Data_Analysis_ANDO/reports/Rapport_Analyse_Donnees_ANDO.pdf",
-        "presentation": "../ENSIIE/All projects/08_Airbnb_NYC_Data_Analysis_ANDO/presentations/Presentation_Partie_1.pdf",
+        "report": "https://raw.githubusercontent.com/nourou-dine-cisse/Projet-ANDO/main/reports/Rapport_Analyse_Donnees_ANDO.pdf",
+        "presentation": "https://raw.githubusercontent.com/nourou-dine-cisse/Projet-ANDO/main/presentations/Airbnb-a-New-York-Economie-de-partage-ou-para-hotellerie.pdf",
         "demo": null,
         "featured": false
       },
@@ -1978,7 +2012,7 @@
           "Quasi-Likelihood"
         ],
         "desc": "McMaster University STATS 720 / GLM suite: statistical inference across binomial, Poisson, negative binomial, and Gamma dispersion models. Residual deviance goodness-of-fit and Fisher scoring implementations across 5 RMarkdown reports.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/13_McMaster_Generalized_Linear_Models",
+        "github": "https://github.com/nourou-dine-cisse/McMaster-Generalized-Linear-Models",
         "report": null,
         "presentation": null,
         "demo": null,
@@ -1997,13 +2031,233 @@
           "AI Pedagogy"
         ],
         "desc": "Curriculum and workshops designed and delivered as AI Lead at Kryptosphere: 4 interactive notebooks and slide decks covering data manipulation, preprocessing & evaluation metrics, clustering, and introductory time series.",
-        "github": "https://github.com/nourou-dine-cisse/ENSIIE-Portfolio-Projects/tree/main/14_Kryptosphere_AI_Workshops",
+        "github": null,
         "report": null,
-        "presentation": "../ENSIIE/All projects/14_Kryptosphere_AI_Workshops/presentations/Formation_Evaluation_Modeles_ML.pdf",
+        "presentation": null,
         "demo": null,
         "featured": false
+      },
+      {
+        "title": "Examining the Effect of Face Accessories on VLM Evaluation",
+        "date": "2026",
+        "category": "AI Evaluation & Fairness",
+        "tags": [
+          "Vision-Language Models",
+          "MiniCPM-V 4.6",
+          "SigLIP 2",
+          "Counterfactual Evaluation",
+          "Fairness",
+          "Synthetic Data"
+        ],
+        "desc": "Co-authored research at Université Paris-Saclay studying how glasses, caps, and masks affect vision-language model outputs. Evaluates 720 synthetic identities across 2,880 counterfactual images with MiniCPM-V 4.6 and SigLIP 2, measuring changes in attribute recognition and job-fitness judgments.",
+        "github": "https://github.com/SalmaAlkhalily/examining-the-effect-of-face-accessories-on-vlm-evaluation",
+        "report": "https://raw.githubusercontent.com/SalmaAlkhalily/examining-the-effect-of-face-accessories-on-vlm-evaluation/main/paper/Examining_the_effect_of_face_accessories_in_VLM_face_evaluation.pdf",
+        "reportLabel": "Paper",
+        "reportLabelFr": "Article",
+        "presentation": "https://raw.githubusercontent.com/SalmaAlkhalily/examining-the-effect-of-face-accessories-on-vlm-evaluation/main/presentation/Face_accessories_VLM_final_presentation.pptx",
+        "demo": null,
+        "featured": true
       }
     ];
+
+    const PROJECT_FR = {
+      'Autoregressive Transformer Decoder from Scratch': {
+        title: 'Décodeur Transformer autorégressif conçu de zéro',
+        category: 'Apprentissage profond et TAL',
+        desc: 'Implémentation PyTorch d’un LLM décodeur uniquement (LLaMA/Mistral), réalisée de zéro. Elle comprend l’attention multi-têtes causale, les encodages positionnels rotatifs (RoPE), RMSNorm, SwiGLU et un cache KV autorégressif en O(N), avec évaluation de la perplexité.'
+      },
+      'Spielberg AI: Enterprise Multi-Agent & RAG Platform': {
+        title: 'Spielberg AI : plateforme d’agents multiples et de RAG',
+        category: 'IA d’entreprise et agents',
+        desc: 'Plateforme de données opérationnelles développée chez Prodigious (Publicis Groupe). Elle intègre des agents superviseur-exécutants avec LangGraph, un pipeline RAG à découpage sémantique et des services FastAPI. Mémoire de stage de 54 pages soutenu.'
+      },
+      'Nash-DQN Multi-Agent Optimal Trading (McMaster)': {
+        title: 'Trading optimal multi-agent par Nash-DQN (McMaster)',
+        category: 'Finance quantitative',
+        desc: 'Projet de recherche MATH 4FM3 à McMaster : entraînement de réseaux Deep Q-Network (Nash-DQN) dans un jeu différentiel stochastique à N agents, avec impact temporaire et permanent sur les prix, afin d’étudier des politiques d’équilibre de Nash compétitives. Mémoire de 34 pages.'
+      },
+      'Visual Question Answering (VQA Multimodal Deep Learning)': {
+        title: 'Questions-réponses visuelles (apprentissage profond multimodal)',
+        category: 'Apprentissage profond et TAL',
+        desc: 'Projet multimodal à McMaster : fusion de questions textuelles (BERT) et de caractéristiques d’images (ResNet CNN) au moyen de couches de cross-attention. Comprend une démo Streamlit interactive pour interroger des images.'
+      },
+      'Malware Detection via GNNs (Sorbonne Data Challenge)': {
+        title: 'Détection de logiciels malveillants par réseaux de neurones graphes',
+        category: 'Cybersécurité et réseaux de neurones graphes',
+        desc: 'Challenge cybersécurité de l’Université Sorbonne : transformation de binaires Windows désassemblés en graphes de flot de contrôle (CFG), puis entraînement de réseaux de neurones graphes avec PyTorch Geometric et de classifieurs d’opcodes pour prédire 459 étiquettes comportementales.'
+      },
+      'Modern C++17 Black-Scholes PDE Solver & SDL Visualization': {
+        title: 'Solveur Black-Scholes en C++17 et visualisation SDL',
+        category: 'Finance quantitative',
+        desc: 'Projet de calcul scientifique à l’ENSIIE : résolution de l’EDP de Black-Scholes pour des options européennes avec les schémas explicite, Euler implicite (solveur de Thomas) et Crank-Nicolson. Visualisation SDL 2.0 en temps réel du payoff et de l’erreur.'
+      },
+      'ETLia: AI-Assisted Data Extraction & Transformation SaaS': {
+        title: 'ETLia : plateforme SaaS d’extraction et transformation de données assistées par IA',
+        category: 'Ingénierie des données',
+        desc: '1er prix du Challenge Entreprendre de l’ENSIIE : plateforme ETL full-stack avec inspection dynamique des schémas SQL Server, nettoyage automatisé des données et backend analytique Streamlit associé à une interface React.'
+      },
+      'SunSéjour Production Docker ETL Datamart': {
+        title: 'Pipeline ETL Docker et datamart SunSéjour',
+        category: 'Ingénierie des données',
+        desc: 'Projet d’ingénierie des données pour une agence touristique : validation automatisée de classeurs Excel, ingestion multi-source, agrégation d’indicateurs métier et pipeline ETL Docker alimentant un datamart en étoile.'
+      },
+      'Infinity Analytics: Financial Time Series & Calibrated Scoring': {
+        title: 'Infinity Analytics : séries temporelles financières et scoring calibré',
+        category: 'Ingénierie des données',
+        desc: 'Stage chez Gainde 2000 / Infinity Analytics : développement de modèles macroéconomiques SARIMA, SARIMAX et VAR, ainsi que d’un pipeline de scoring comportemental calibré, évalué avec le score de Brier.'
+      },
+      'Breast Cancer Genomic Survival Modeling (METABRIC Cohort)': {
+        title: 'Modélisation de la survie du cancer du sein (cohorte METABRIC)',
+        category: 'Statistiques et biostatistique',
+        desc: 'Étude de biostatistique à l’ENSIIE sur la cohorte METABRIC (2 000 patientes) : courbes de survie Kaplan-Meier, tests du log-rank, estimation des risques par le modèle de Cox et prédiction multivariée des rechutes par régression logistique.'
+      },
+      'NLP Semantic Representations & BiLSTM-CNN NER': {
+        title: 'Représentations sémantiques et reconnaissance d’entités nommées BiLSTM-CNN',
+        category: 'Apprentissage profond et TAL',
+        desc: 'Projet de TAL à l’ENSIIE : étude de la géométrie des plongements de mots et création d’un modèle hybride CNN de caractères + BiLSTM pour la reconnaissance d’entités CoNLL, ainsi que classification par CNN 1D et ajustement fin de BERT.'
+      },
+      'Financial News Sentiment Analysis (BiLSTM Deep Learning)': {
+        title: 'Analyse du sentiment de l’actualité financière par BiLSTM',
+        category: 'Apprentissage profond et TAL',
+        desc: 'Projet STATS 4A03 à McMaster : analyse du sentiment directionnel de titres d’actualité financière avec un réseau BiLSTM régularisé par dropout et évalué à l’aide de matrices de confusion.'
+      },
+      'Canadian Retail Seasonal Demand Forecasting (SARIMA)': {
+        title: 'Prévision saisonnière des ventes au détail au Canada (SARIMA)',
+        category: 'Statistiques et biostatistique',
+        desc: 'Projet STATS 4A03 à McMaster : application de la méthodologie de Box-Jenkins aux ventes au détail de Statistique Canada. Transformations Box-Cox, différenciation saisonnière, minimisation de l’AICc et diagnostic des résidus par Ljung-Box.'
+      },
+      'Multivariate Factor Analysis & Spatial Clustering (Airbnb NYC)': {
+        title: 'Analyse factorielle et classification spatiale (Airbnb à New York)',
+        category: 'Statistiques et biostatistique',
+        desc: 'Projet ANDO à l’ENSIIE : exploration multidimensionnelle des données Airbnb de New York (49 000 annonces). Analyse en composantes principales, analyse des corrélations canoniques entre les caractéristiques des logements et les avis, puis segmentation des hôtes.'
+      },
+      'Applied Generalized Linear Models (GLM Theory & Inference in R)': {
+        title: 'Modèles linéaires généralisés : théorie et inférence avec R',
+        category: 'Statistiques et biostatistique',
+        desc: 'Ensemble de travaux STATS 720 à McMaster : inférence statistique pour les modèles binomial, Poisson, binomial négatif et Gamma. Tests d’ajustement par déviance résiduelle et implémentations du scoring de Fisher dans cinq rapports RMarkdown.'
+      },
+      'Kryptosphere AI & Machine Learning Hands-On Workshops': {
+        title: 'Ateliers pratiques d’IA et de machine learning chez Kryptosphere',
+        category: 'Apprentissage profond et TAL',
+        desc: 'Programme et ateliers conçus et animés en tant que responsable IA chez Kryptosphere : quatre notebooks interactifs et présentations sur la manipulation des données, le prétraitement, les métriques d’évaluation, le clustering et les séries temporelles.'
+      },
+      'Examining the Effect of Face Accessories on VLM Evaluation': {
+        title: 'Effet des accessoires faciaux sur l’évaluation des modèles vision-langage',
+        category: 'Évaluation et équité de l’IA',
+        desc: 'Recherche coécrite à l’Université Paris-Saclay sur l’effet des lunettes, casquettes et masques sur les réponses des modèles vision-langage. L’étude évalue 720 identités synthétiques sur 2 880 images contrefactuelles avec MiniCPM-V 4.6 et SigLIP 2, et mesure les variations de reconnaissance d’attributs et de jugement d’aptitude professionnelle.'
+      }
+    };
+
+    const CATEGORY_FR = {
+      'All': 'Tous',
+      'Deep Learning & NLP': 'Apprentissage profond et TAL',
+      'Enterprise AI & Agents': 'IA d’entreprise et agents',
+      'Quantitative Finance': 'Finance quantitative',
+      'Cybersecurity & GNN': 'Cybersécurité et réseaux de neurones graphes',
+      'Data Engineering': 'Ingénierie des données',
+      'Statistics & Biostats': 'Statistiques et biostatistique',
+      'AI Evaluation & Fairness': 'Évaluation et équité de l’IA'
+    };
+
+    const STATIC_FR = {
+      'About': 'À propos',
+      'Skills': 'Compétences',
+      'Experience': 'Expérience',
+      'Projects': 'Projets',
+      'Education': 'Formation',
+      'Contact': 'Contact',
+      'Seeking a 6-month end-of-studies internship · March 2027': 'À la recherche d’un stage de fin d’études de 6 mois · mars 2027',
+      'View Projects': 'Voir les projets',
+      'Download CV': 'Télécharger le CV',
+      'Scroll': 'Défiler',
+      'About Me': 'À propos de moi',
+      'Crafting Intelligence,': 'Créer des systèmes intelligents,',
+      'One Model at a Time': 'un modèle à la fois',
+      "I'm": 'Je suis ',
+      ', an Applied Mathematics engineering student pursuing the': ', étudiant en école d’ingénieurs en mathématiques appliquées, préparant le ',
+      'ENSIIE–M2IA double degree at Université Paris-Saclay': 'double diplôme ENSIIE–M2IA à l’Université Paris-Saclay',
+      'Building end-to-end ML systems across computer vision, graph neural networks, and reinforcement learning. ENSIIE–M2IA double degree · Entrepreneurship winner.': 'Conception de systèmes ML de bout en bout en vision par ordinateur, réseaux de neurones graphes et apprentissage par renforcement. Double diplôme ENSIIE–M2IA · Lauréat d’un concours d’entrepreneuriat.',
+      'I build production-ready ML systems: from raw data pipelines to deployed models, across computer vision, graph neural networks, NLP, and reinforcement learning.': 'Je conçois des systèmes de machine learning prêts pour la production : des pipelines de données brutes aux modèles déployés, en vision par ordinateur, réseaux de neurones graphes, TAL et apprentissage par renforcement.',
+      'I co-founded': 'J’ai cofondé ',
+      ', an AI platform automating ETL via natural language, which won': ', une plateforme d’IA qui automatise l’ETL en langage naturel, récompensée lors du ',
+      "France's largest Engineering School Entrepreneurship Challenge 2025": 'Challenge Entreprendre 2025, le plus grand concours d’entrepreneuriat des écoles d’ingénieurs en France',
+      'Major ML Projects': 'Projets majeurs de ML',
+      'Class Rank · Data Analysis': 'Classement · analyse de données',
+      'Languages Spoken': 'Langues parlées',
+      'Entrepreneurship Win': 'Prix d’entrepreneuriat',
+      'Tech Stack': 'Technologies',
+      'Tools &': 'Outils et',
+      'Technologies': 'technologies',
+      'Currently working with': 'Technologies utilisées actuellement',
+      'AI · Machine Learning': 'IA · Machine learning',
+      'Frameworks': 'Frameworks',
+      'Languages': 'Langages',
+      'Data · Infrastructure': 'Données · infrastructure',
+      'Career': 'Parcours',
+      'Professional': 'Expérience',
+      'AI & Data Engineering Intern': 'Stagiaire en IA et ingénierie des données',
+      'May 11 – Jul 17, 2026': '11 mai – 17 juillet 2026',
+      'Prodigious France · Publicis Groupe · Paris': 'Prodigious France · Publicis Groupe · Paris',
+      'AI Platform Development:': 'Développement de plateforme IA :',
+      'Designed and developed Spielberg, an operational data centralization platform for Prodigious France.': 'Conception et développement de Spielberg, une plateforme de centralisation des données opérationnelles de Prodigious France.',
+      'Multi-Agent AI & RAG:': 'Agents IA et RAG :',
+      'Built LangGraph supervisor-worker agents and a retrieval-augmented generation pipeline for internal business data.': 'Création d’agents superviseur-exécutants avec LangGraph et d’un pipeline de génération augmentée par récupération pour les données internes.',
+      'Backend Engineering:': 'Ingénierie backend :',
+      'Delivered production-oriented FastAPI services and PostgreSQL integrations, documented in a 54-page engineering thesis.': 'Développement de services FastAPI adaptés à la production et d’intégrations PostgreSQL, documentés dans un mémoire d’ingénieur de 54 pages.',
+      'Machine Learning Intern': 'Stagiaire en machine learning',
+      'May – Aug 2025': 'Mai – août 2025',
+      'ML Modeling:': 'Modélisation ML :',
+      'Predictive suite for Port of Dakar (110,260 records): Random Forest (F1=0.96) for irregularity detection, SARIMA (MAE=0.67) for dossier traffic forecasting.': 'Modèles prédictifs pour le port de Dakar (110 260 enregistrements) : Random Forest (F1=0,96) pour détecter les irrégularités et SARIMA (MAE=0,67) pour prévoir le trafic des dossiers.',
+      'Data Engineering:': 'Ingénierie des données :',
+      'Secure Oracle Cloud pipeline with SQL/PLSQL across 136 variables, managing a 12% missing value rate.': 'Pipeline sécurisé sur Oracle Cloud et SQL/PLSQL couvrant 136 variables, avec 12 % de valeurs manquantes.',
+      'Deployment:': 'Déploiement :',
+      'Real-time FastAPI inference microservices integrated with Oracle APEX dashboards for live business intelligence.': 'Microservices d’inférence FastAPI en temps réel, intégrés à des tableaux de bord Oracle APEX pour l’analyse métier.',
+      'Work': 'Projets',
+      'Featured': 'À la une',
+      'Recognition': 'Distinctions',
+      'Achievements &': 'Réalisations et',
+      'Awards': 'récompenses',
+      "Winner: France's Largest Engineering School Entrepreneurship Challenge 2025": 'Lauréat : Challenge Entreprendre 2025, concours d’entrepreneuriat des écoles d’ingénieurs',
+      'Co-founded ETLia, an AI platform automating ETL pipelines via natural language queries.': 'Cofondateur d’ETLia, une plateforme d’IA qui automatise les pipelines ETL à partir de requêtes en langage naturel.',
+      '1st in Class: Data Analysis, ENS IIE': '1er de la promotion : analyse de données à l’ENSIIE',
+      'Ranked first in Data Analysis among all engineering students at ENS IIE (Paris Saclay).': 'Classé premier en analyse de données parmi les élèves ingénieurs de l’ENSIIE (Université Paris-Saclay).',
+      'Background': 'Formation',
+      'Education &': 'Études et',
+      'Training': 'formation',
+      'Exchange Semester': 'Semestre d’échange',
+      'Neural Networks & ML, Applied AI (NLP, Computer Vision, LLMs), Generalized Linear Models, Time Series (ARIMA/Box-Jenkins), Financial Markets & Derivatives: stochastic calculus and Black-Scholes.': 'Réseaux de neurones et machine learning, IA appliquée (TAL, vision par ordinateur, LLM), modèles linéaires généralisés, séries temporelles (ARIMA/Box-Jenkins), marchés financiers et produits dérivés : calcul stochastique et Black-Scholes.',
+      'Double Degree ENSIIE–M2IA · Université Paris-Saclay': 'Double diplôme ENSIIE–M2IA · Université Paris-Saclay',
+      'M2IA courses: Data Readiness and Evaluation in AI Systems, NLP Today, Deep Learning for NLP, Information Retrieval 2: Recent Advances, Reinforcement Learning, Probabilistic Generative Models, Advanced Optimization and Automated ML, and Scientific Machine Learning, with a choice between Signal Processing M2 and From Symbolic to Neurosymbolic AI.': 'Cours du M2IA : Data Readiness and Evaluation in AI Systems, NLP Today, Deep Learning for NLP, Information Retrieval 2 : Recent Advances, Reinforcement Learning, Probabilistic Generative Models, Advanced Optimization and Automated ML et Scientific Machine Learning, avec un choix entre Signal Processing M2 et From Symbolic to Neurosymbolic AI.',
+      'Probability, Statistics, Stochastic Processes, Data Analysis, Machine Learning, Deep Learning, Graph Theory and Markov Chains.': 'Probabilités, statistiques, processus stochastiques, analyse de données, machine learning, deep learning, théorie des graphes et chaînes de Markov.',
+      'CPGE MP*: Classe Préparatoire aux Grandes Écoles': 'CPGE MP* : classe préparatoire aux grandes écoles',
+      "Intensive two-year program in advanced mathematics, physics, and computer science for France's top engineering schools.": 'Formation intensive de deux ans en mathématiques avancées, physique et informatique, préparant aux concours des grandes écoles d’ingénieurs.',
+      'Get In Touch': 'Me contacter',
+      "Let's": 'Restons',
+      'Connect': 'en contact',
+      "I'm actively seeking a": 'Je recherche actuellement un',
+      '6-month end-of-studies AI / Machine Learning internship from March 2027': 'stage de fin d’études de 6 mois en IA / machine learning à partir de mars 2027',
+      "If you have an": 'Si vous avez une',
+      "opportunity or just want to talk AI, I'd love to hear from you.": 'opportunité ou souhaitez échanger sur l’IA, contactez-moi.',
+      'Email': 'Courriel',
+      'LinkedIn': 'LinkedIn',
+      'Phone': 'Téléphone',
+      'Paris, France · Open to relocation': 'Paris, France · mobilité géographique',
+      'French: Native': 'Français : langue maternelle',
+      'English: C2': 'Anglais : C2',
+      'Arabic:': 'Arabe :',
+      'German: B1': 'Allemand : B1',
+      'Built by': 'Site créé par',
+      'Seeking a 6-month end-of-studies internship from March 2027': 'À la recherche d’un stage de fin d’études de 6 mois à partir de mars 2027',
+      'Code': 'Code',
+      'Rapport': 'Rapport',
+      'Présentation': 'Présentation',
+      'Demo': 'Démo',
+      'Toggle theme': 'Changer de thème'
+    };
+
+    let currentLanguage = localStorage.getItem('portfolio-language') === 'fr' ? 'fr' : 'en';
+    let activeProjectFilter = 'All';
+    let staticTextNodes = [];
 
     // ═══════════════════════════════════════════════════════════════════════
     //  DARK MODE TOGGLE
@@ -2228,16 +2482,19 @@
     gsap.to('#h-btns', { opacity: 1, y: 0, duration: .8, delay: 1.2, ease: 'power3.out' });
 
     // ── Typing role after hero appears ───────────────────────────────────
-    const roles = ['AI / Machine Learning Engineer', 'Computer Vision Researcher', 'Applied Mathematician', 'Deep Learning Practitioner', 'Graph Neural Network Specialist'];
+    const ROLES = {
+      en: ['AI / Machine Learning Engineer', 'Computer Vision Researcher', 'Applied Mathematician', 'Deep Learning Practitioner', 'Graph Neural Network Specialist'],
+      fr: ['Ingénieur IA / Machine Learning', 'Chercheur en vision par ordinateur', 'Mathématicien appliqué', 'Spécialiste du deep learning', 'Spécialiste des réseaux de neurones graphes']
+    };
     let ri = 0;
     setTimeout(() => {
       const roleEl = document.getElementById('h-role');
-      roleEl.innerHTML = '<strong>' + roles[0] + '</strong>';
+      roleEl.innerHTML = '<strong>' + ROLES[currentLanguage][0] + '</strong>';
       function cycleRole() {
-        ri = (ri + 1) % roles.length;
+        ri = (ri + 1) % ROLES[currentLanguage].length;
         gsap.to(roleEl, {
           opacity: 0, y: -8, duration: .28, onComplete: () => {
-            roleEl.innerHTML = '<strong>' + roles[ri] + '</strong>';
+            roleEl.innerHTML = '<strong>' + ROLES[currentLanguage][ri] + '</strong>';
             gsap.fromTo(roleEl, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: .32 });
           }
         });
@@ -2284,19 +2541,32 @@
     // ═══════════════════════════════════════════════════════════════════════
     //  PROJECTS — render + filter
     // ═══════════════════════════════════════════════════════════════════════
+    function documentViewerUrl(fileUrl) {
+      return `https://docs.google.com/gview?url=${encodeURIComponent(fileUrl)}`;
+    }
+
     function renderProjects(filter) {
       const grid = document.getElementById('pgrid');
       grid.innerHTML = '';
       const list = filter === 'All' ? PROJECTS : PROJECTS.filter(p => p.category === filter);
       list.forEach(p => {
+        const localized = currentLanguage === 'fr' ? (PROJECT_FR[p.title] || {}) : {};
+        const title = localized.title || p.title;
+        const category = currentLanguage === 'fr' ? (CATEGORY_FR[p.category] || p.category) : p.category;
+        const description = localized.desc || p.desc;
         const d = document.createElement('div');
         d.className = 'pc' + (p.featured ? ' feat' : '');
-        const gh = p.github ? `<a href="${p.github}" target="_blank" rel="noopener noreferrer" class="plink btn-code" title="View Source Code on GitHub"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>Code</a>` : '';
-        const rep = p.report ? `<a href="${p.report}" target="_blank" rel="noopener noreferrer" class="plink btn-rep" title="Open Technical Report / Research Paper"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>Rapport</a>` : '';
-        const pres = p.presentation ? `<a href="${p.presentation}" target="_blank" rel="noopener noreferrer" class="plink btn-pres" title="Open Presentation Deck / Defense Slides"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Présentation</a>` : '';
-        const dm = p.demo ? `<a href="${p.demo}" target="_blank" rel="noopener noreferrer" class="plink btn-demo" style="color:var(--pri)"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Demo</a>` : '';
-        const fb = p.featured ? `<div class="fbadge"><svg width="10" height="10" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Featured</div>` : '';
-        d.innerHTML = `${fb}<div class="pcat">${p.category}</div><div class="ptitle">${p.title}</div><div class="pdate">${p.date}</div><div class="pdesc">${p.desc}</div><div class="ptags">${p.tags.map(t => `<span class="ptag">${t}</span>`).join('')}</div><div class="plinks">${gh}${rep}${pres}${dm}</div>`;
+        const codeLabel = currentLanguage === 'fr' ? 'Code' : 'Code';
+        const reportLabel = currentLanguage === 'fr' ? 'Rapport' : 'Report';
+        const presentationLabel = currentLanguage === 'fr' ? 'Présentation' : 'Presentation';
+        const demoLabel = currentLanguage === 'fr' ? 'Démo' : 'Demo';
+        const featuredLabel = currentLanguage === 'fr' ? 'À la une' : 'Featured';
+        const gh = p.github ? `<a href="${p.github}" target="_blank" rel="noopener noreferrer" class="plink btn-code" title="View Source Code on GitHub"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>${codeLabel}</a>` : '';
+        const rep = p.report ? `<a href="${documentViewerUrl(p.report)}" target="_blank" rel="noopener noreferrer" class="plink btn-rep" title="Open Technical Report / Research Paper"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>${reportLabel}</a>` : '';
+        const pres = p.presentation ? `<a href="${documentViewerUrl(p.presentation)}" target="_blank" rel="noopener noreferrer" class="plink btn-pres" title="Open Presentation Deck / Defense Slides"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>${presentationLabel}</a>` : '';
+        const dm = p.demo ? `<a href="${p.demo}" target="_blank" rel="noopener noreferrer" class="plink btn-demo" style="color:var(--pri)"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>${demoLabel}</a>` : '';
+        const fb = p.featured ? `<div class="fbadge"><svg width="10" height="10" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>${featuredLabel}</div>` : '';
+        d.innerHTML = `${fb}<div class="pcat">${category}</div><div class="ptitle">${title}</div><div class="pdate">${p.date}</div><div class="pdesc">${description}</div><div class="ptags">${p.tags.map(t => `<span class="ptag">${t}</span>`).join('')}</div><div class="plinks">${gh}${rep}${pres}${dm}</div>`;
         // 3D tilt
         d.addEventListener('mousemove', e => {
           const r = d.getBoundingClientRect();
@@ -2316,19 +2586,48 @@
     function buildFilters() {
       const cats = ['All', ...new Set(PROJECTS.map(p => p.category))];
       const bar = document.getElementById('fbar');
+      bar.innerHTML = '';
       cats.forEach(cat => {
         const b = document.createElement('button');
-        b.className = 'fb' + (cat === 'All' ? ' on' : '');
-        b.textContent = cat;
+        b.className = 'fb' + (cat === activeProjectFilter ? ' on' : '');
+        b.textContent = currentLanguage === 'fr' ? (CATEGORY_FR[cat] || cat) : cat;
         b.onclick = () => {
-          bar.querySelectorAll('.fb').forEach(x => x.classList.remove('on'));
-          b.classList.add('on');
-          renderProjects(cat);
+          activeProjectFilter = cat;
+          buildFilters();
+          renderProjects(activeProjectFilter);
         };
         bar.appendChild(b);
       });
     }
-    buildFilters(); renderProjects('All');
+
+    function applyLanguage() {
+      document.documentElement.lang = currentLanguage;
+      staticTextNodes.forEach(({ node, original, key }) => {
+        node.nodeValue = currentLanguage === 'fr' ? (STATIC_FR[key] || original) : original;
+      });
+      const languageButton = document.getElementById('language-btn');
+      languageButton.textContent = currentLanguage === 'en' ? 'FR' : 'EN';
+      languageButton.setAttribute('aria-label', currentLanguage === 'en' ? 'Switch language to French' : 'Passer le site en anglais');
+      const role = document.getElementById('h-role');
+      role.innerHTML = `<strong>${ROLES[currentLanguage][0]}</strong>`;
+      ri = 0;
+      buildFilters();
+      renderProjects(activeProjectFilter);
+    }
+
+    const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    while (textWalker.nextNode()) {
+      const node = textWalker.currentNode;
+      if (node.parentElement.closest('#pgrid, #fbar, #language-btn')) continue;
+      const key = node.nodeValue.trim().replace(/\s+/g, ' ');
+      if (key) staticTextNodes.push({ node, original: node.nodeValue, key });
+    }
+    document.getElementById('language-btn').addEventListener('click', () => {
+      currentLanguage = currentLanguage === 'en' ? 'fr' : 'en';
+      localStorage.setItem('portfolio-language', currentLanguage);
+      applyLanguage();
+    });
+    applyLanguage();
 
     // ═══════════════════════════════════════════════════════════════════════
     //  NAV — scrolled state + active section highlight
