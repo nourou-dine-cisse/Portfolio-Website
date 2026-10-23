@@ -1743,6 +1743,46 @@
     // ═══════════════════════════════════════════════════════════════════════
     const PROJECTS = [
       {
+        "title": "Examining the Effect of Face Accessories on VLM Evaluation",
+        "date": "2026",
+        "category": "AI Evaluation & Fairness",
+        "tags": [
+          "Vision-Language Models",
+          "MiniCPM-V 4.6",
+          "SigLIP 2",
+          "Counterfactual Evaluation",
+          "Fairness",
+          "Synthetic Data"
+        ],
+        "desc": "Co-authored research at Université Paris-Saclay studying how glasses, caps, and masks affect vision-language model outputs. Evaluates 720 synthetic identities across 2,880 counterfactual images with MiniCPM-V 4.6 and SigLIP 2, measuring changes in attribute recognition and job-fitness judgments.",
+        "github": "https://github.com/SalmaAlkhalily/examining-the-effect-of-face-accessories-on-vlm-evaluation",
+        "report": "https://raw.githubusercontent.com/SalmaAlkhalily/examining-the-effect-of-face-accessories-on-vlm-evaluation/main/paper/Examining_the_effect_of_face_accessories_in_VLM_face_evaluation.pdf",
+        "reportLabel": "Paper",
+        "reportLabelFr": "Article",
+        "presentation": "https://raw.githubusercontent.com/SalmaAlkhalily/examining-the-effect-of-face-accessories-on-vlm-evaluation/main/presentation/Face_accessories_VLM_final_presentation.pptx",
+        "demo": null,
+        "featured": true
+      },
+      {
+        "title": "LoRA: Low-Rank Adaptation & PEFT from Scratch",
+        "date": "2026",
+        "category": "Deep Learning & NLP",
+        "tags": [
+          "PyTorch",
+          "LoRA",
+          "PEFT",
+          "Transformers",
+          "LLM Fine-Tuning",
+          "Model Efficiency"
+        ],
+        "desc": "From-scratch PyTorch implementation of Low-Rank Adaptation (LoRA) for parameter-efficient fine-tuning (PEFT) of Transformers. Implements low-rank decomposition matrices W0 + (alpha/r)*BA on self-attention projections, freezing 99.6% of base weights while retaining 97% of full fine-tuning performance on BERT.",
+        "github": "https://github.com/nourou-dine-cisse/LoRA-From-Scratch-PyTorch",
+        "report": null,
+        "presentation": null,
+        "demo": null,
+        "featured": true
+      },
+      {
         "title": "Autoregressive Transformer Decoder from Scratch",
         "date": "2026",
         "category": "Deep Learning & NLP",
@@ -2041,46 +2081,6 @@
         "presentation": null,
         "demo": null,
         "featured": false
-      },
-      {
-        "title": "Examining the Effect of Face Accessories on VLM Evaluation",
-        "date": "2026",
-        "category": "AI Evaluation & Fairness",
-        "tags": [
-          "Vision-Language Models",
-          "MiniCPM-V 4.6",
-          "SigLIP 2",
-          "Counterfactual Evaluation",
-          "Fairness",
-          "Synthetic Data"
-        ],
-        "desc": "Co-authored research at Université Paris-Saclay studying how glasses, caps, and masks affect vision-language model outputs. Evaluates 720 synthetic identities across 2,880 counterfactual images with MiniCPM-V 4.6 and SigLIP 2, measuring changes in attribute recognition and job-fitness judgments.",
-        "github": "https://github.com/SalmaAlkhalily/examining-the-effect-of-face-accessories-on-vlm-evaluation",
-        "report": "https://raw.githubusercontent.com/SalmaAlkhalily/examining-the-effect-of-face-accessories-on-vlm-evaluation/main/paper/Examining_the_effect_of_face_accessories_in_VLM_face_evaluation.pdf",
-        "reportLabel": "Paper",
-        "reportLabelFr": "Article",
-        "presentation": "https://raw.githubusercontent.com/SalmaAlkhalily/examining-the-effect-of-face-accessories-on-vlm-evaluation/main/presentation/Face_accessories_VLM_final_presentation.pptx",
-        "demo": null,
-        "featured": true
-      },
-      {
-        "title": "LoRA: Low-Rank Adaptation & PEFT from Scratch",
-        "date": "2026",
-        "category": "Deep Learning & NLP",
-        "tags": [
-          "PyTorch",
-          "LoRA",
-          "PEFT",
-          "Transformers",
-          "LLM Fine-Tuning",
-          "Model Efficiency"
-        ],
-        "desc": "From-scratch PyTorch implementation of Low-Rank Adaptation (LoRA) for parameter-efficient fine-tuning (PEFT) of Transformers. Implements low-rank decomposition matrices W0 + (alpha/r)*BA on self-attention projections, freezing 99.6% of base weights while retaining 97% of full fine-tuning performance on BERT.",
-        "github": "https://github.com/nourou-dine-cisse/LoRA-From-Scratch-PyTorch",
-        "report": null,
-        "presentation": null,
-        "demo": null,
-        "featured": true
       }
     ];
 
@@ -2577,7 +2577,8 @@
     function renderProjects(filter) {
       const grid = document.getElementById('pgrid');
       grid.innerHTML = '';
-      const list = filter === 'All' ? PROJECTS : PROJECTS.filter(p => p.category === filter);
+      let list = filter === 'All' ? [...PROJECTS] : PROJECTS.filter(p => p.category === filter);
+      list.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
       list.forEach(p => {
         const localized = currentLanguage === 'fr' ? (PROJECT_FR[p.title] || {}) : {};
         const title = localized.title || p.title;
