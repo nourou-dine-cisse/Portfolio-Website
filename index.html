@@ -1831,9 +1831,9 @@
           "Stochastic Games",
           "Optimal Liquidation"
         ],
-        "desc": "McMaster University MATH 4FM3 research project: trained Deep Q-Networks (Nash-DQN) in an N-agent stochastic differential game with temporary and permanent price impact, discovering competitive Nash equilibrium policies. 34-page thesis.",
+        "desc": "McMaster University MATH 4FM3 research project: trained Deep Q-Networks (Nash-DQN) in an N-agent stochastic differential game with temporary and permanent price impact, discovering competitive Nash equilibrium policies. Formal academic research report & defense presentation.",
         "github": "https://github.com/nourou-dine-cisse/Nash-Deep-Q-Learning-Multi-Agent-Optimal-Trading",
-        "report": "https://raw.githubusercontent.com/nourou-dine-cisse/Nash-Deep-Q-Learning-Multi-Agent-Optimal-Trading/main/reports/Rapport_Nash_DQN_Optimal_Trading.pdf",
+        "report": "https://raw.githubusercontent.com/nourou-dine-cisse/Nash-Deep-Q-Learning-Multi-Agent-Optimal-Trading/main/reports/Math4FM3ProjectReport.pdf",
         "presentation": "https://raw.githubusercontent.com/nourou-dine-cisse/Nash-Deep-Q-Learning-Multi-Agent-Optimal-Trading/main/presentation/NashDQN_Presentation.pptx",
         "demo": null,
         "featured": true
@@ -2136,7 +2136,7 @@
       'Nash-DQN Multi-Agent Optimal Trading (McMaster)': {
         title: 'Trading optimal multi-agent par Nash-DQN (McMaster)',
         category: 'Finance quantitative',
-        desc: 'Projet de recherche MATH 4FM3 à McMaster : entraînement de réseaux Deep Q-Network (Nash-DQN) dans un jeu différentiel stochastique à N agents, avec impact temporaire et permanent sur les prix, afin d’étudier des politiques d’équilibre de Nash compétitives. Mémoire de 34 pages.'
+        desc: 'Projet de recherche MATH 4FM3 à McMaster : entraînement de réseaux Deep Q-Network (Nash-DQN) dans un jeu différentiel stochastique à N agents, avec impact temporaire et permanent sur les prix, afin d’étudier des politiques d’équilibre de Nash compétitives. Rapport de recherche complet et présentation de soutenance.'
       },
       'Visual Question Answering (VQA Multimodal Deep Learning)': {
         title: 'Questions-réponses visuelles (apprentissage profond multimodal)',
@@ -2619,6 +2619,9 @@
     //  PROJECTS — render + filter
     // ═══════════════════════════════════════════════════════════════════════
     function documentViewerUrl(fileUrl) {
+      if (fileUrl.toLowerCase().endsWith('.pdf')) {
+        return fileUrl;
+      }
       return `https://docs.google.com/gview?url=${encodeURIComponent(fileUrl)}`;
     }
 
